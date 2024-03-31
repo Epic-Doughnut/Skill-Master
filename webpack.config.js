@@ -1,0 +1,23 @@
+const path = require('path');
+
+module.exports = {
+    entry: './scripts/main.js', // Your main JS file
+    output: {
+        filename: '[name]_bundle.js', // The bundled JS file
+        path: path.resolve(__dirname, 'dist') // Where it will be saved
+    },
+    devServer: {
+        contentBase: './dist'
+    },
+    devtool: 'inline-source-map',
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
+    },
+    performance: {
+        hints: false,
+        maxEntrypointSize: 512000,
+        maxAssetSize: 512000
+    }
+};

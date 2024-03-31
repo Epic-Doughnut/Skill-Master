@@ -1,0 +1,93 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.rpg-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-box {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.toggleable-box {
+    flex: 1;
+    display: none;
+    overflow-y: auto;
+}
+
+.log-box {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+.log-box.shrunk {
+    display: none;
+}
+
+/* .log-spacer{
+    align-self: stretch;
+} */
+
+h2 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.character-content {
+    padding: 10px 0;
+}
+
+.bar {
+    background-color: #007bff;
+    height: 20px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toggle-log-btn {
+    align-self: flex-end;
+    position: absolute;
+}
+
+/* Dark theme for hotkeys */
+.hotkey {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.hp-bar, .xp-bar {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+}

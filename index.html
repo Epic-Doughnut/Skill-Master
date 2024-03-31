@@ -5,11 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill Master</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <h1>Welcome!</h1>
+    <div class="rpg-container">
+        <div class="column">
+            <div class="fixed-box character-info box">
+                <h2>Hero</h2>
+                <div class="character-content">
+                    <div class="hp-bar">
+                        <p><strong>HP:</strong></p>
+                        <div class="bar" id="hp-bar"></div>
+                    </div>
+                    <div class="xp-bar">
+                        <p><strong>XP:</strong></p>
+                        <div class="bar" id="xp-bar"></div>
+                    </div>
+                    <p><strong>Stats:</strong></p>
+                    <ul>
+                        <li>Strength: 10</li>
+                        <li>Dexterity: 8</li>
+                        <li>Intelligence: 6</li>
+                        <li>Wisdom: 7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="fixed-box skills box">
+                <h2>Skills</h2>
+                <!-- Skills content -->
+            </div>
+        </div>
+        <div class="column">
+            <div class="toggleable-box combat box">
+                <h2>Combat</h2>
+                <!-- Combat content -->
+            </div>
+            <div class="toggleable-box navigation box">
+                <h2>Navigation</h2>
+                <!-- Navigation content -->
+            </div>
+            <div class="toggleable-box equipment box">
+                <h2>Equipment</h2>
+                <!-- Equipment content -->
+            </div>
+            <div class="toggleable-box shops box">
+                <h2>Shops</h2>
+                <!-- Shops content -->
+            </div>
+        </div>
+        <div class="column">
+            <!-- <div class="log-spacer"></div> -->
 
+            <div class="log-box box">
+                <h2>Log</h2>
+                <div class="log-content">
+                    <!-- Log content -->
+                </div>
+            </div>
+            <button class="toggle-log-btn">>></button>
+        </div>
+    </div>
+
+
+    <script src="dist/main_bundle.js"></script>
 </body>
 
 </html>
